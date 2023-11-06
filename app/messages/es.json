@@ -1,0 +1,14 @@
+{
+    "Index": {
+      "Metadata":{
+        "title": "Nexity",
+        "description": "Una plantilla para montar rápido blogs y webs",
+        "siteName": "nexity.io"
+      },
+      "Path":{
+        "Home":{
+          "title": "Inicio"
+        }
+      }
+    }
+  }

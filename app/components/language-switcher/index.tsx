@@ -1,5 +1,5 @@
 import Link from "next-intl/link";
-import { locales } from "@/lib/constants/localeConfig";
+import { locales } from "@/app/constants/locale";
 
 export default function LanguageSwitcher() {
   return (

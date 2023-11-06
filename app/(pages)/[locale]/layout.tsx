@@ -1,28 +1,21 @@
 import '@/app/styles/globals.css'
 import Footer from '@/app/components/footer';
 import {NextIntlClientProvider} from 'next-intl';
-import {notFound} from 'next/navigation';
- 
+import { Layout} from '@/app/types/index.t';
+import { getLocaleMessages } from '@/app/utils/messages';
 
-interface Props{
-    children: React.ReactNode,
-    params: {
-        locale: string
-    }
-}
+
+//IN PROGRESS
 export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'de'}];
+  return [{locale: 'es'}, {locale: 'en'}, {locale: 'de'}];
 }
- 
-export default async function Layout({children, params: {locale}}: Props) {
-  let messages;
+
+//generating metadata 
+export { generateMetadata } from '@/app/utils/metadata';
+
+export default async function Layout({children, params: {locale}}: Layout) {
+  const messages = await getLocaleMessages(locale);
   
-  try {
-    messages = (await import(`@/lib/messages/${locale}.json`)).default;
-  } catch (error) {
-    notFound();
-  }
- 
   return (
     <html lang={locale}>
       <body>
@@ -34,3 +27,4 @@ export default async function Layout({children, params: {locale}}: Props) {
     </html>
   );
 }
+

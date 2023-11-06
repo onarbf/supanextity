@@ -1,0 +1,17 @@
+{
+  "Index": {
+    "Metadata":{
+      "title": "Nexity - The coolest template in the world",
+      "description": "Just a template to start with!",
+      "siteName": "nexity.io"
+    },
+    "Path":{
+      "Home":{
+        "title": "Home"
+      },
+      "About":{
+        "title": "About"
+      }
+    }
+  }
+}
