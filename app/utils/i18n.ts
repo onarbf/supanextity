@@ -1,6 +1,6 @@
 import {getRequestConfig} from 'next-intl/server';
 import deepmerge from 'deepmerge';
-import { defaultLocale } from './app/constants/locale';
+import { defaultLocale } from '../constants/locale';
 export default getRequestConfig(async ({locale}) =>{{ 
 
   let messages;

@@ -5,7 +5,6 @@ import { Layout} from '@/app/types/index.t';
 import { locales } from '@/app/constants/locale';
 import { notFound } from 'next/navigation';
 
-
 //IN PROGRESS
 export function generateStaticParams() {
   return [{locale: 'es'}, {locale: 'en'}, {locale: 'de'}];
