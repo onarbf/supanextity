@@ -8,6 +8,9 @@
       "Path":{
         "Home":{
           "title": "Inicio"
+        },
+        "About":{
+          "title": "Sobre Mí"
         }
       }
     }

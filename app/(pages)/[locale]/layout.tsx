@@ -1,8 +1,9 @@
 import '@/app/styles/globals.css'
 import Footer from '@/app/components/footer';
-import {NextIntlClientProvider} from 'next-intl';
 import { Layout} from '@/app/types/index.t';
-import { getLocaleMessages } from '@/app/utils/messages';
+
+import { locales } from '@/app/constants/locale';
+import { notFound } from 'next/navigation';
 
 
 //IN PROGRESS
@@ -14,15 +15,14 @@ export function generateStaticParams() {
 export { generateMetadata } from '@/app/utils/metadata';
 
 export default async function Layout({children, params: {locale}}: Layout) {
-  const messages = await getLocaleMessages(locale);
-  
+
+  const isValidLocale = locales.some((cur) => cur === locale);
+  if (!isValidLocale) notFound();
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <Footer/>
-        </NextIntlClientProvider>
       </body>
     </html>
   );
