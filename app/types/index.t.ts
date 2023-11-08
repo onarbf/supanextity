@@ -12,3 +12,9 @@ export interface Metadata{
 export interface LayoutParams{
     locale: string
 }
+
+export interface GlobalContent{
+    color?: string
+    setColor?:(color: string) => void,
+    size?: string
+  }

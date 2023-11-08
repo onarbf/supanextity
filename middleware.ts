@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import createIntlMiddleware from 'next-intl/middleware';
+import createMiddleware from 'next-intl/middleware';
 import {locales, defaultLocale} from '@/app/constants/locale';
 
 
 export  default function middleware(request: NextRequest) {
-  const intlMiddleware = createIntlMiddleware({
+  const intlMiddleware = createMiddleware({
   // A list of all locales that are supported
   locales,
   // If this locale is matched, pathnames work without a prefix (e.g. `/about`)

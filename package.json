@@ -7,11 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "eslint": "eslint ./app",
-    "lint:debug": "eslint ./src --debug",
-    "lint:fix": "eslint ./src --fix"
+    "allin": "next build & next start"
   },
   "dependencies": {
+    "@sanity-typed/types": "^5.8.5",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.19.1",
     "deepmerge": "^4.3.1",
@@ -22,7 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.19.1",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.0",
+    "zustand": "^4.4.6"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.2",
