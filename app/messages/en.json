@@ -7,9 +7,19 @@
     },
     "Path":{
       "Home":{
+        "title": "",
+        "header": "Welcome to my blog!",
+        "subheader": "This is my favorite part of internet. Making beautiful and reliable sites!"
       },
       "About":{
         "title": "About"
+      }
+    },
+    "Component":{
+      "PostsList":{
+        "PostsListItem":{
+          "title": "Title"
+        }
       }
     }
   }

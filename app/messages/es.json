@@ -7,10 +7,19 @@
       },
       "Path":{
         "Home":{
-          "title": "Inicio"
+          "title": "",
+          "header": "Bienvenido a mi blog!",
+          "subheader": "Esta es mi parte favorita de internet, montar blogs desde cero para nunca usarlos!"
         },
         "About":{
           "title": "Sobre Mí"
+        }
+      },
+      "Component":{
+        "PostsList":{
+          "PostsListItem":{
+            "title": "Título"
+          }
         }
       }
     }

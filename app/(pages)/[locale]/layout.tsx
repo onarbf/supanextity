@@ -15,8 +15,7 @@ export function generateStaticParams() {
 
 export default async function Layout({children, params: {locale}}: Layout) {
 
-  const isValidLocale = locales.some((cur) => cur === locale);
-  if (!isValidLocale) notFound();
+  if (!locales.includes(locale as any)) notFound();
   return (
     <html lang={locale}>
      

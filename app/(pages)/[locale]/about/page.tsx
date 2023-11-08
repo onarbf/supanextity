@@ -1,8 +1,8 @@
-import { getPosts } from '@/app/server';
+import { getPosts } from '@/app/server/posts';
 import {useTranslations} from 'next-intl'
 import Link from 'next/link';
  
-export default function Index({ params: {locale} }:{params:{locale: string}}) {
+export default function Index() {
   const t = useTranslations('Index')
 
   return <div>
