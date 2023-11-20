@@ -1,4 +1,4 @@
-import {Link} from "@/app/messages/navigation";
+import {Link} from "@/app/utils/navigation";
 import { locales } from "@/app/constants/locale";
 import { getLocale } from "next-intl/server";
 

@@ -13,6 +13,9 @@
       },
       "About":{
         "title": "About"
+      },
+      "NotFound":{
+        "title": "Whoops! Page not found..."
       }
     },
     "Component":{

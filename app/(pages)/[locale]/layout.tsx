@@ -4,7 +4,7 @@ import { Layout} from '@/app/types/index.t';
 
 import { locales } from '@/app/constants/locale';
 import { notFound } from 'next/navigation';
-import { GlobalContextProvider } from '@/app/context/store';
+import {Provider} from '@/app/providers/provider';
 
 //generating metadata 
 export { generateMetadata } from '@/app/utils/metadata';
@@ -16,14 +16,15 @@ export function generateStaticParams() {
 export default async function Layout({children, params: {locale}}: Layout) {
 
   if (!locales.includes(locale as any)) notFound();
+  
   return (
     <html lang={locale}>
      
-      <body>
-        <GlobalContextProvider>
+     <body className=''>
+        <Provider>
           {children}
           <Footer/>
-        </GlobalContextProvider>
+        </Provider>
       </body>
       
     </html>

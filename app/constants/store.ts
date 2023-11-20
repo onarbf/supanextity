@@ -1,3 +1,4 @@
-export const INITIAL_STORE = {
-    COLOR: 'red',
+export const CONTEXT = {
+    color: 'red',
+    setColor: (value:string)=>{},
 }

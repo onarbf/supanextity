@@ -21,11 +21,14 @@ export async function generateMetadata(
     const path = getPathByPathName(pathname);
 
     const title = t(`Index.Path.${path}.title`)
+    const description = t('Index.Metadata.description')
     return {
       title: {
         default: title,
       },
-      description:t('Index.Metadata.description'),
+      description:{
+        default: description
+      },
 /*       robots: { index: true, follow: true },
       manifest: `/favicon/site.webmanifest`, */
       // authors: [

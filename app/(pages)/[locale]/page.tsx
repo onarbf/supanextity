@@ -1,4 +1,4 @@
-;import PostsList from '@/app/components/posts-list';
+import PostsList from '@/app/components/posts-list';
 import { getPosts } from '@/app/server/posts';
 import { getTranslations } from 'next-intl/server';
 

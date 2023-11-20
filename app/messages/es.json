@@ -13,6 +13,9 @@
         },
         "About":{
           "title": "Sobre Mí"
+        },
+        "NotFound":{
+          "title": "Whoops! Página no encontrada..."
         }
       },
       "Component":{

@@ -1,4 +1,4 @@
-import {Pathnames, createSharedPathnamesNavigation} from 'next-intl/navigation';
+import { createSharedPathnamesNavigation} from 'next-intl/navigation';
 
 import {locales } from '@/app/constants/locale' ;
 
