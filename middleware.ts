@@ -3,7 +3,8 @@ import createMiddleware from 'next-intl/middleware';
 import {locales, defaultLocale} from '@/app/constants/locale';
 
 export  default function middleware(request: NextRequest) {
-  
+
+  //creating the translations middleware for next-intl. It defines what languages are active and what is the default.
   const intlMiddleware = createMiddleware({
   // A list of all locales that are supported
   locales,
@@ -12,6 +13,7 @@ export  default function middleware(request: NextRequest) {
   localePrefix: 'as-needed'
 });
 const response = intlMiddleware(request)
+//we add this header to make the metadata dynamic as we need diferent metadata for each culture, and as we are using the generateMetadata in the layout, we will work the path params inside of it. 
 response.headers.set('x-url', request.nextUrl.pathname)
 
 return response

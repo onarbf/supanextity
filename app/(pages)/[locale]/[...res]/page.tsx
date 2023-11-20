@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 
+//Page created by default for inexistent creating routes
 export default async function NotFound(){
     const t = await getTranslations("Index.Path.NotFound")
     return(

@@ -6,7 +6,7 @@ export function getPathByPathName(pathName:string){
     let path = '/';
 
     if (match) {
-      // Si se encuentra una coincidencia, la eliminamos y retornamos el resultado
+      // if we find it, we return it.
       path = pathName.replace(match[0], '/');
     }
 
