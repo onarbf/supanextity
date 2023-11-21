@@ -22,6 +22,7 @@ export default async function Layout({children, params: {locale}}: Layout) {
      
      <body className=''>
         <Provider>
+
           {children}
           <Footer/>
         </Provider>

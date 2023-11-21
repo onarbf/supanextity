@@ -14,6 +14,8 @@
     "@sanity-typed/types": "5.8.5",
     "@sanity/image-url": "1.0.2",
     "@sanity/vision": "3.19.1",
+    "@supabase/ssr": "^0.0.10",
+    "@supabase/supabase-js": "^2.38.4",
     "deepmerge": "4.3.1",
     "graphql": "16.8.1",
     "next": "14.0.1",
@@ -23,6 +25,7 @@
     "npm": "10.2.3",
     "react": "18",
     "react-dom": "18",
+    "react-google-one-tap-login": "^0.1.1",
     "sanity": "3.19.1",
     "styled-components": "6.1.0"
   },
