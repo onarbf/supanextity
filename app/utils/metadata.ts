@@ -22,7 +22,7 @@ export async function generateMetadata(
     const path = getPathByPathName(pathname);
 
     const title = t(`Index.Path.${path}.title`)
-    const description = t('Index.Metadata.description')
+    const description = t(`Index.Path.${path}.description`)
     return {
       title: {
         default: title,
