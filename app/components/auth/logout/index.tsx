@@ -1,7 +1,6 @@
 'use client'
 
 import { supabaseFromClient } from "@/app/server/supabase/from-client"
-import {redirect} from 'next/navigation'
 
 export default  function  Logout(){
     const handleLogout = async ()=>{

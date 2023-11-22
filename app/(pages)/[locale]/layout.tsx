@@ -6,6 +6,7 @@ import { locales } from '@/app/constants/locale';
 import { notFound } from 'next/navigation';
 import {Provider} from '@/app/providers/provider';
 
+
 //generating metadata 
 export { generateMetadata } from '@/app/utils/metadata';
 

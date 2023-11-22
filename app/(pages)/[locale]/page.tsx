@@ -1,12 +1,15 @@
+
 import GoogleSignIn from '@/app/components/auth/google-signin';
 import Logout from '@/app/components/auth/logout';
 import { supabaseFromServer } from '@/app/server/supabase/from-server';
 import { getTranslations } from 'next-intl/server';
 
-export  default async function Index() {
+export const dynamic = 'force-dynamic'
+export default async function Index() {
   const t = await getTranslations("Index.Path.Home")
   const supabase = await supabaseFromServer();
   const {data: {session},error} = await supabase.auth.getSession();
+  
   if(session){
     console.log(session)
   }
