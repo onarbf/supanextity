@@ -9,11 +9,10 @@ export default  function  GoogleSignIn(){
         const info = await supabase.auth.signInWithOAuth({
             provider: 'google',
             options: {
-                redirectTo: `${location.origin}/server/auth/callback`,
+                redirectTo: `${process.env.NEXT_PUBLIC_URL_WEBSITE}/server/auth/callback`,
               }
         })
-
-        console.log('info',info.data)
+        console.log('signing in here:',  `${process.env.NEXT_PUBLIC_URL_WEBSITE}/server/auth/callback`)
     }
     return(<div className="flex justify-center" onClick={handleSignin}>
         <button className="mt-4 rounded bg-blue-900 p-4">Login with Google!</button>

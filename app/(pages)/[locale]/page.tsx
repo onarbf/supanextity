@@ -9,10 +9,6 @@ export default async function Index() {
   const t = await getTranslations("Index.Path.Home")
   const supabase = await supabaseFromServer();
   const {data: {session},error} = await supabase.auth.getSession();
-  
-  if(session){
-    console.log(session)
-  }
   return (
   <section>
     <div className="flex flex-col items-center ">
