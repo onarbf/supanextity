@@ -5,6 +5,7 @@ export async function GET(request: Request) {
   console.log('callback punched')
   const { searchParams, origin } = new URL(request.url)
   const code = searchParams.get('code')
+  console.log('origin',origin)
   // if "next" is in param, use it as the redirect URL
   const next = searchParams.get('next') ?? '/'
 
