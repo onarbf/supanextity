@@ -4,7 +4,6 @@ import Logout from '@/app/components/auth/logout';
 import { supabaseFromServer } from '@/app/server/supabase/from-server';
 import { getTranslations } from 'next-intl/server';
 
-export const dynamic = 'force-dynamic'
 export default async function Index() {
   const t = await getTranslations("Index.Path.Home")
   const supabase = await supabaseFromServer();

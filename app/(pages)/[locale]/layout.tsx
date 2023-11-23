@@ -10,10 +10,6 @@ import {Provider} from '@/app/providers/provider';
 //generating metadata 
 export { generateMetadata } from '@/app/utils/metadata';
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
-}
-
 export default async function Layout({children, params: {locale}}: Layout) {
 
   if (!locales.includes(locale as any)) notFound();
